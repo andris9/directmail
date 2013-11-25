@@ -33,7 +33,7 @@ Where
 
 *Directmail* is very inefficient as it queues all e-mails to be sent into memory. Additionally, if a message is not yet sent and the process is closed, all data about queued messages are lost. Thus *directmail* is only suitable for low throughput systems, like password remainders and such, where the message can be processed immediatelly. *Directmail* is not suitable for spamming.
 
-While being not 100% reliable, *directmail* can still handle sending errors, graylisting and such. If a message can not be sent, it is requeued and retried later.
+While not being 100% reliable (remember - if process exits, entire queue is lost), *directmail* can still handle sending errors, graylisting and such. If a message can not be sent, it is requeued and retried later.
 
 ## License
 
