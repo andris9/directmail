@@ -18,7 +18,7 @@ Where
 
 Push a message to the outgoing queue
 
-    directmail({
+    directmail.send({
         from: "sender@example.com",
         recipients: ["receiver1@example.com", "receiver2@example.com"],
         message: "Subject: test\r\n\r\nHello world!"
