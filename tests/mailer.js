@@ -1,9 +1,8 @@
 "use strict";
 
-var simplesmtp = require("simplesmtp");
-var createDirectmailer = require("../index");
-
-var PORT_NUMBER = 8397;
+var simplesmtp = require("simplesmtp"),
+    createDirectmailer = require("../index"),
+    PORT_NUMBER = 8397;
 
 exports["General tests"] = {
     setUp: function (callback) {
@@ -42,7 +41,7 @@ exports["General tests"] = {
             message: "Subject: test\r\n\r\nTest!"
         });
 
-        mail.once("failed", function(data){
+        mail.once("failed", function(){
             test.ok(false);
             test.done();
         });
@@ -53,4 +52,4 @@ exports["General tests"] = {
             test.done();
         });
     }
-}
+};
