@@ -38,4 +38,3 @@ While being not 100% reliable, *directmail* can still handle sending errors, gra
 ## License
 
 **MIT**
-
