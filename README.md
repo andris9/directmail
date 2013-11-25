@@ -32,7 +32,6 @@ Where
   * **from** (string) is the e-mail address of the sender
   * **recipients** (array) is an array of recipient e-mails. Put all `to`, `cc` and `bcc` addresses here.
   * **message** (string|buffer) is the RFC2822 message to be sent
-  * **debug** (boolean) if set to true, all data about queue processing is printed to console
 
 ### Check queue length
 
