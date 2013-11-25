@@ -41,6 +41,8 @@ exports["General tests"] = {
             message: "Subject: test\r\n\r\nTest!"
         });
 
+        test.equal(mailer.length, 1);
+
         mail.once("failed", function(){
             test.ok(false);
             test.done();
@@ -49,6 +51,7 @@ exports["General tests"] = {
         mail.once("sent", function(data){
             test.equal(data.domain, "127.0.0.1");
             test.ok(/^250\D/.test(data.response));
+            test.equal(mailer.length, 0);
             test.done();
         });
     }

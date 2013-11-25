@@ -4,6 +4,8 @@ Sendmail alternative to send e-mails directly to recipients without a relaying s
 
 ## Usage
 
+### Setup
+
 Require *directmail* object
 
     var createDirectmail = require("directmail"),
@@ -15,6 +17,7 @@ Where
     * *debug* - if set to true, prints all traffic to console
     * *name* - hostname to be used when introducing the client to the MX server
 
+### Send mail
 
 Push a message to the outgoing queue
 
@@ -30,6 +33,16 @@ Where
   * **recipients** (array) is an array of recipient e-mails. Put all `to`, `cc` and `bcc` addresses here.
   * **message** (string|buffer) is the RFC2822 message to be sent
   * **debug** (boolean) if set to true, all data about queue processing is printed to console
+
+### Check queue length
+
+You can check the count of unsent messages from the `.length` property of the directmail object
+
+    console.log(directmail.length); // nr of messages to be sent
+
+If you try to send a message with multiple recipients then every unique recipient domain counts as a different message.
+
+## Issues
 
 *Directmail* is very inefficient as it queues all e-mails to be sent into memory. Additionally, if a message is not yet sent and the process is closed, all data about queued messages are lost. Thus *directmail* is only suitable for low throughput systems, like password remainders and such, where the message can be processed immediatelly. *Directmail* is not suitable for spamming.
 
