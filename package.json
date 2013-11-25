@@ -7,7 +7,7 @@
     "test": "nodeunit tests"
   },
   "keywords": [
-    "SMTP"
+    "SMTP", "sendmail", "Nodemailer", "email"
   ],
   "author": "Andris Reinman",
   "license": "MIT",
@@ -17,8 +17,5 @@
   "devDependencies": {
     "nodeunit": "~0.8.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/andris9/directmail.git"
-  }
+  "repository": "git://github.com/andris9/directmail.git"
 }
