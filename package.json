@@ -1,6 +1,6 @@
 {
   "name": "directmail",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sendmail replacement, sends mail directly to recipients SMTP server",
   "main": "index.js",
   "scripts": {
