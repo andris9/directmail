@@ -6,15 +6,22 @@ Sendmail alternative to send e-mails directly to recipients without a relaying s
 
 Require *directmail* object
 
-    var directmail = require("directmail");
+    var createDirectmail = require("directmail"),
+        directmail = createDirectmail(options);
 
-And push a message to the outgoing queue
+Where
+
+  * **options** is an optional options object with the following properties
+    * *debug* - if set to true, prints all traffic to console
+    * *name* - hostname to be used when introducing the client to the MX server
+
+
+Push a message to the outgoing queue
 
     directmail({
         from: "sender@example.com",
         recipients: ["receiver1@example.com", "receiver2@example.com"],
-        message: "Subject: test\r\n\r\nHello world!",
-        debug: false
+        message: "Subject: test\r\n\r\nHello world!"
     });
 
 Where
