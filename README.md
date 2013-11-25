@@ -2,6 +2,12 @@
 
 Sendmail alternative to send e-mails directly to recipients without a relaying service.
 
+### Support Nodemailer development
+
+[![Donate to author](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DB26KWR2BQX5W)
+
+If you want to support with Bitcoins then my wallet address is `15Z8ADxhssKUiwP3jbbqJwA21744KMCfTM`
+
 ## Usage
 
 ### Setup
