@@ -2,6 +2,7 @@
 
 var simplesmtp = require("simplesmtp"),
     createDirectmailer = require("../index"),
+    packageData = require("../package.json"),
     PORT_NUMBER = 8397;
 
 exports["General tests"] = {
@@ -26,6 +27,13 @@ exports["General tests"] = {
     "Create directmailer instance": function(test){
         var mailer = createDirectmailer();
         test.ok(mailer.send);
+        test.done();
+    },
+
+    "Mailer instance exposes version number": function(test){
+        var mailer = createDirectmailer();
+        test.ok(mailer.version);
+        test.equal(mailer.version, packageData.version);
         test.done();
     },
 
