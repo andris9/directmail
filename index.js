@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // expose to the world
-module.exports = require("./lib/mailer");
+module.exports = require('./lib/mailer');

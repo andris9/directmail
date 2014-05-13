@@ -1,6 +1,6 @@
 {
   "name": "directmail",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Sendmail replacement, sends mail directly to recipients SMTP server",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Andris Reinman",
   "license": "MIT",
   "dependencies": {
-    "simplesmtp": "~0.3.15"
+    "simplesmtp": "^0.3.30"
   },
   "devDependencies": {
     "nodeunit": "~0.8.2"
