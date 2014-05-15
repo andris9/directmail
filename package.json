@@ -15,7 +15,7 @@
   "author": "Andris Reinman",
   "license": "MIT",
   "dependencies": {
-    "simplesmtp": "^0.3.30"
+    "simplesmtp": "~0.3.30"
   },
   "devDependencies": {
     "nodeunit": "~0.8.2"
